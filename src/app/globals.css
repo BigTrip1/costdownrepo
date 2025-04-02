@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 240, 240, 240;
+}
+
+/* Reset all margins and padding */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+table,
+tr,
+td,
+th {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Override any Tailwind defaults that might interfere */
+.no-tailwind-margins {
+  margin: 0 !important;
+  padding: 0 !important;
+}
